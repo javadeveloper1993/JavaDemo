@@ -1,0 +1,52 @@
+ ======>  Servlet Dout ( # = Completed , * = Remaining , ^ = Example Implemented )
+ 
+  * 1> How many create cookie per web server ?
+  * 2> Why servlet context attribute not removed from web.xml.
+  * 3> Why value is not replace into Servlet Request Attribute Listener Method 
+       ( @See for more info : ServletRequestAttributeDemo )
+       
+
+       
+
+
+======>  Servlet Knowledge ( ^ = Example Implemented )
+
+  ^	1> There are 4.0 kB size of every cookie.
+  ^	2> Browser only return cookie name and value to the web server. other info like comment,
+  	   max-age, domain, path info, cookie secure info doesn't sent to the web server.
+  ^	3> getServletContext() method always return null without initialization object of
+  	   ServetConfig.
+  ^	4> Difference between <session-timeout> in web.xml and serMaxInterval() into session method. 
+  ^	5> JSESSIONID :- It's Cookie act as HttpSession When first request arrive into Web server.
+  	                 It's also create calling JSP page but you can disable by
+  	                 <%@ page session="false" %> into JSP directive.  
+  ^	6> If Cookie Off then get httpsession object always new.
+  
+  
+  
+
+
+======>  Servlet Research ( # = Completed , * = Remaining , ^ = Example Implemented )
+ 
+  * 1> What is meaning of the tag <tracking mode> into <session-config> tag into web.xml ?
+       Note :- If Tracking Mode = COKKIE then JSESSIONID is Set into cookie
+               If Tracking Mode = URL then JSESSIONID value change every request to web server
+               
+  * 2> What is real use case of setHttpOnly in Cookie technique ?
+  ^ 3> Monitoring TCP/IP Request Response Into Eclipse IDE
+  * 4> How to disable  JSESSIONID ?
+  * 5> What is Session Fixation ?
+  
+
+
+
+  
+  ======>  Servlet Topic Remaining ( # = Completed , * = Remaining , ^ = Example Implemented )
+ 
+ * 1> Implement Session Login & Logout Example
+ * 2> Implement Encryption Filter
+ * 3> What Is SSI ?
+ * 4> Servlet Security 
+ 
+ 
+ 
