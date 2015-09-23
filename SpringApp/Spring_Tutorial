@@ -1,0 +1,5 @@
+Package Structure :- com.example.springframework.beans
+
+=============   MAVEN Dependency Site 
+	1> Spring Framework :- http://mvnrepository.com/artifact/org.springframework
+	2> Create Custom Bean :- http://www.javacodegeeks.com/2015/04/spicy-spring-dynamically-create-your-own-beandefinition.html

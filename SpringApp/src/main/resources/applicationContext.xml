@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This Is Declaration For Name-Space For Spring Framework & also define 
+	custome namespace like Maulik-SpringApp -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:Maulik-SpringApp="http://www.w3.org/2001/XMLSchema-instance"
+	Maulik-SpringApp:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="beanFactory_employee" class="com.example.springframework.model.Employee"
+		name="beanFactory_employee1,beanFactory_employee2,beanFactory_employee3">
+		<property name="id" value="001" />
+	</bean>
+
+	<bean id="beanFactory_employeeWithName" class="com.example.springframework.model.Employee"
+		name="beanFactory_employeeWithName1,beanFactory_employeeWithName2">
+		<property name="id" value="001" />
+		<property name="name" value="Maulik" />
+	</bean>
+
+
+	<bean id="applicationContext_employeeWithName" class="com.example.springframework.model.Employee"
+		name="applicationContext_employeeWithName1,applicationContext_employeeWithName2">
+		<property name="id" value="002" />
+		<property name="name" value="Parth" />
+	</bean>
+
+
+</beans>

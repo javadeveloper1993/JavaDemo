@@ -1,0 +1,32 @@
+ ======>  Spring Dout ( # = Completed , * = Remaining , ^ = Example Implemented )
+ 
+  * 1> How to make src/main/java as a resources folder ?
+  ^ 2> Why applicationContext.xml not loaded from src/main/java folder ? ( Solution = Use 
+        FileSystemXmlApplicationContext to solve this problem. )
+
+       
+
+
+======>  Spring Knowledge ( ^ = Example Implemented )
+
+ ^ 1> lazy-initialization mode = false in Bean Factory
+      lazy-initialization mode = true in Application Context.
+      Note :- Object create when first request come in bean factory container & 
+              in object create when application-context container initialize.
+  
+  
+
+
+======>  Spring Research ( # = Completed , * = Remaining , ^ = Example Implemented )
+ 
+ * 1> How Create Custome Bean Defination ?
+  
+
+
+
+  
+  ======>  Spring Topic Remaining ( # = Completed , * = Remaining , ^ = Example Implemented )
+ 
+ 
+ 
+ 

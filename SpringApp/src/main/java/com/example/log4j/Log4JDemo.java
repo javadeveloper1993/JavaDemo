@@ -9,6 +9,9 @@ public class Log4JDemo {
 
 	public static void main(String[] args) {
 		logger.info("This Is My First Log4j Info Demo...!!!");
+		
+		logger.info("Test123...!!!");
+		
 	}
 
 }
