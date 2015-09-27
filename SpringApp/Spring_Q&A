@@ -13,6 +13,10 @@
       lazy-initialization mode = true in Application Context.
       Note :- Object create when first request come in bean factory container & 
               in object create when application-context container initialize.
+           
+ ^ 2> If you define bean DI via constructor approach in applicationContect.xml file but 
+      doen't define constructor in POJO model then generate error ( Bean Creation Failed :-
+	  Could not resolve matching constructor) 
   
   
 
