@@ -24,5 +24,40 @@
 		<property name="name" value="Parth" />
 	</bean>
 
+	<bean id="employeeStaticFactoryBeanDemo" class="com.example.springframework.model.EmployeeFactory"
+		factory-method="getStaticEmployeeObject">
+		<property name="id" value="003" />
+		<property name="name" value="Krunal J Patel" />
+	</bean>
+
+	<bean id="employeeFactoryBeanDemo" class="com.example.springframework.model.EmployeeFactory">
+	</bean>
+
+	<bean id="employeeStaticFactoryInstanceBeanDemo" factory-method="getEmployeeObject"
+		factory-bean="employeeFactoryBeanDemo">
+		<property name="id" value="004" />
+		<property name="name" value="Maulik J Patel" />
+	</bean>
+
+	<bean id="userEmptyConstructor" class="com.example.springframework.model.User">
+	</bean>
+
+	<bean id="userOneArgConstructor" class="com.example.springframework.model.User">
+		<constructor-arg name="userId" value="user001">
+		</constructor-arg>
+	</bean>
+
+	<bean id="userTwoConstructor" class="com.example.springframework.model.User">
+		<constructor-arg name="userId" value="user001"></constructor-arg>
+		<constructor-arg name="name" value="Patel Maulik J"></constructor-arg>
+	</bean>
+	
+	<bean id="userSimpleSetterInjection" class="com.example.springframework.model.User">
+		<property name="userId"><value>100</value></property>
+		<property name="age"><value>23</value></property>
+		<property name="name"><value>Patel Rahul D</value></property>
+		<property name="mobileNo"><value>9995459855</value></property>
+	</bean>
+
 
 </beans>
